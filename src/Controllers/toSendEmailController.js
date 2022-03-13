@@ -101,7 +101,7 @@ module.exports = {
       html: `<p>Olá ${nome_fantasia} esse e-mail é apenas um teste, por favor não responde!</p>`,
     };
   
-    await transporter.sendMail(message, function(error) {
+    transporter.sendMail(message, function(error) {
       if (error) {
         response.status(400).json({
           message: "Erro: E-mail não enviado com sucesso!!"
