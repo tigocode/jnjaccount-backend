@@ -10,7 +10,7 @@ const ws = wb.addWorksheet("REGISTER");
 
 
 module.exports = {
-  async CreateRegister(request, response) {
+  CreateRegister(request, response) {
     const { grupo, razao_social, nome_fantasia, cpf_cnpj, inscricao_estadual, 
     contribuinte_icms="", data_nascimento, endereco, numero, complemento, bairro, 
     cep, cidade, uf, telefone, telefone_celular, email, email_nfe } =  request.body;
@@ -67,7 +67,7 @@ module.exports = {
     register.forEach(increment => {
       let columnIndex = 1;
       Object.keys(increment).forEach(columnName => {
-        ws.cell(rowIndex, columnIndex++).string(increment[columnName]);
+        ws.cell(rowIndex, columnIndex++).string(increment[columnName].toLocaleUpperCase());
       });
       rowIndex++;
     });
