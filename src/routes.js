@@ -1,11 +1,11 @@
 const express = require("express");
 
 const toSendEmailController = require("../src/Controllers/toSendEmailController");
-const toSendEmailClientController = require("../src/Controllers/toSendEmailClientController");
+const SendEmailClientController = require("../src/Controllers/SendEmailClientController");
 
 const router = express.Router();
 
 router.post("/", toSendEmailController.CreateRegister);
-router.post("/client", toSendEmailClientController.ToSendClientConfirm);
+router.post("/", SendEmailClientController.ToSendClientConfirm);
 
 module.exports = router
