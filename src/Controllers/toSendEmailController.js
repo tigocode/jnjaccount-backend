@@ -98,60 +98,99 @@ module.exports = {
         }
       ],
       html: `
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-        <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
           <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
             <title>ACUVUE - Solicitação de Cadastro</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <style>
-              @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@700&family=Poppins&display=swap');
+              <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-              table {
-                font-family: 'Archivo', sans-serif;
-                font-family: 'Inter', sans-serif;
-                font-family: 'Poppins', sans-serif;
-              }     
-            </style>
-          </head>
-          <body style="margin: 0; padding: 0;">
-           <table border="0" cellspacing="0" cellpadding="0" width="100%">
-            <tr>
-              <td>
-                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="border-collapse: collapse;">
-                  <tr>
-                    <td bgcolor="#00539B" height="66.66" style="padding: 0px 0px 0px 505px;">
-                      <img src="./assets/logoAcuvue.svg" alt="logo Acuvue" style="width: 74px; height: 16.94px;">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#00539B" height="26.66" style="padding: 0px 0px 6px 62px;">
-                      <p style="width: 284px; height: 24px; font-family: 'Archivo';
-                      font-style: normal; font-weight: 700; font-size: 17px; line-height: 42px;
-                      color: #FFFFFF;">Solicitação de Cadastro - ACUVUE.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#E3E3E4" height="216.66">
-                      <table align="center" border="0" cellspacing="0" cellpadding="0" width="528.19" height="208.41" style="border-collapse: collapse;">
-                        <tr>
-                          <td bgcolor="#FFFFFF" style="border-radius: 8px; background: #FFFFFF;">
-                            <p style="font-family: 'Inter'; font-style: normal; font-weight: 700;
-                            font-size: 22px; line-height: 27px; text-align: center; text-transform: uppercase;
-                            color: #1B57B0;">
-                              olá recebemos uma solicitação de cadastro, vamos conferir?
-                            </p>
-                          </td>       
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-           </table>
-          </body>
-        </html>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@700&family=Poppins&display=swap" rel="stylesheet">
+          <style type="text/css">    
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body {
+                width: 100vw;
+            
+              font-family: 'Archivo', sans-serif;
+              font-family: 'Inter', sans-serif;
+              font-family: 'Poppins', sans-serif;
+            }
+            .content {
+              width: 600px;
+              height: 348.75px;
+            
+              background: #F0F0F7;
+            }
+            .topo {
+              width: 600px;
+                height: 113.33px;
+            
+              background: #00539B;
+            }
+            .topo img {
+              width: 74px;
+              height: 16.94px;
+              margin: 27px 0 0 493px;
+            }
+            .topo h1 {
+              width: 384px;
+              height: 24px;
+                padding: 0 0 0 86px;
+            
+              font-family: 'Archivo';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 17px;
+                line-height: 42px;
+            
+              color: #FFFFFF;
+            }
+            .content-data {
+              width: 514px;
+              height: 208.41px;
+                margin: 8px 0 0 43px;
+            
+              background: #FFFFFF;
+              border: 1px solid #C4C4C4;
+              border-radius: 8px;
+            }
+            .content-data p {
+              width: 455px;
+              height: 59px;
+                padding: 74.41px 0 0 47.62px;
+            
+              font-family: 'Archivo';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 32px;
+              text-align: center;
+                text-transform: uppercase;
+            
+              color: #1B57B0;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="content">
+            <header>
+              <div class="topo">
+                <img src="https://tigocode.s3.amazonaws.com/logoAcuvue.svg" alt="Logo ACUVUE!">
+                <h1>Solicitação de Cadastro - ACUVUE.</h1>
+              </div>
+            </header>
+            <div class="content-data">
+              <p>olá recebemos uma solicitação de cadastro, vamos conferir?</p>
+            </div>
+          </div>
+        </body>
+      </html>
       `,
     };  
 
