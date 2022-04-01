@@ -181,7 +181,7 @@ module.exports = {
           <div class="content">
             <header>
               <div class="topo">
-                <img src="https://tigocode.s3.amazonaws.com/logoAcuvue.svg" alt="Logo ACUVUE!">
+                <img src="https://tigocode.s3.amazonaws.com/logo.png" alt="Logo ACUVUE!">
                 <h1>Solicitação de Cadastro - ACUVUE.</h1>
               </div>
             </header>
