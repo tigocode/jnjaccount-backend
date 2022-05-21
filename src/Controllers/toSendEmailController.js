@@ -88,7 +88,7 @@ module.exports = {
   
     const message = {
       from: user= process.env.USER_SMTP,
-      to: user= process.env.USER_SMTP,
+      to: user= process.env.EMAIL_ADDRESS,
       replyTo: email,
       subject: `ACUVUE | Solicitação de Cadastro` + ` - ${nome_fantasia.toLocaleUpperCase()}`,
       attachments: [
